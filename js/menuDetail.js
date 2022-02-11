@@ -1,0 +1,2 @@
+/* menuDetail.js */
+
