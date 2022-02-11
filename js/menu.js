@@ -18,4 +18,13 @@ $(function(){
         var offset = $('#icecream').offset();
         $('html').animate({scrollTop:offset.top},1000);
     });
+
+      $(window).on('scroll',function(){
+        if($(document).scrollTop() >= ($('#headerBox').height()+$('#mainMenuBox').height())){
+            $('#menuProduct').addClass('menuBoxFixed'); /*menu.css에 있음*/
+        }
+        else{
+            $('#menuProduct').removeClass('menuBoxFixed');
+        }
+      });
 });
