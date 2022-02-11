@@ -1,2 +1,2 @@
-/* menuDetail.js */
+//menuDetail.js
 
