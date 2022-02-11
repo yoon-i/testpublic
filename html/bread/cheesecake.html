@@ -51,7 +51,7 @@
 
 <!-- 제품상세 container -->
      <section>
-     <div id="container">
+     <div id="product_container">
          <!-- 서브 타이틀 -->
          <div id="sub_title">
              <h1>BREAD</h1>
@@ -67,9 +67,15 @@
          </div>
 
          <!-- 제품사진 div -->
-         <div>
-             <div id="product_view"><img src="../../image/product/cheesecake.jpg"></div>
+         <div class="container">
+             <div class="show" href="../../image/product/cheesecake.jpg">
+                 <img src="../../image/product/cheesecake.jpg" id="show-img">
+             </div>
          </div>
+         <!-- 제품사진 Zoom관련 -->
+         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+         <script src="../../js/zoom-image.js"></script>
+         <script src="../../js/product_zoom.js"></script>
 
          <!-- 제품정보 div-->
          <fieldset id="product_info">
