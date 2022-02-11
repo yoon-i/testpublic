@@ -2,6 +2,9 @@
 /*★메뉴★*/
 #menuBox{
     background-color:#146eb4;
+
+    z-index:10; /*스크롤시*/
+    width:1280px; /*웹 크기 줄이면 글자 중앙 배치 안 됨*/
 }
 /**#FFB300**/
 #menuBox ul li {
@@ -16,6 +19,40 @@
     font-weight:bold;
     text-decoration:none;
 }
+
+
+/*subtitle*/
+#sub_title {
+    width:100%;
+    float:right;
+    margin-top:30px;
+}
+
+#sub_title h1 {
+    font-size:36px;
+    font-weight:bold;
+    text-align:left;
+    width:50%;
+    margin:0;
+    padding-left:100px;
+    text-shadow: 2px 2px 2px #C2C2C2;
+}
+
+#map {
+    float:right;
+    margin-right:30px;
+}
+#map li {
+    display:inline-block;
+    padding:5px;
+}
+
+#map a {
+    color:#737373;
+    font-size:13px;
+    text-decoration:none;
+}
+
 /*★상품 공통★*/
 
 /*
@@ -94,5 +131,15 @@
 }
 
 .product div:hover{
-    opacity:0.8;
+    transform: scale(1.1, 1.1);
+    transition:transform 1s;
 }
+
+/*★for js★*/
+.menuBoxFixed{
+    position:fixed;
+    top:0;
+    z-index:10;
+}
+
+
