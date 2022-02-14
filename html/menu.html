@@ -44,6 +44,7 @@
                 <!--메뉴: COFFEE / BEVERAGE / BREAD / ICE CREAM-->
                 <div id="menuBox">
                     <ul id="menu">
+                        <li><a href="#">SEE ALL</a></li>
                         <li><a href="#">COFFEE</a></li>
                         <li><a href="#">BEVERAGE</a></li>
                         <li><a href="#">BREAD</a></li>
@@ -53,8 +54,20 @@
             </article>
 
             <article>
-                <div id="sub_title">
-                     <ul id="map">
+                <!--전체보기-->
+                <div class="sub_title"  id="map_all">
+                     <ul class="map">
+                         <li><a href=""><img src="../image/icon_home.png" alt="홈으로"></a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">MENU</a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">SEE ALL</a></li>
+                     </ul>
+                </div>
+
+                <!--커피-->
+                <div class="sub_title"  id="map_coffee">
+                     <ul class="map">
                          <li><a href=""><img src="../image/icon_home.png" alt="홈으로"></a></li>
                          <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
                          <li><a href="">MENU</a></li>
@@ -62,6 +75,40 @@
                          <li><a href="">COFFEE</a></li>
                      </ul>
                 </div>
+
+                <!--음료-->
+                <div class="sub_title"  id="map_beverage">
+                     <ul class="map">
+                         <li><a href=""><img src="../image/icon_home.png" alt="홈으로"></a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">MENU</a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">BEVERAGE</a></li>
+                     </ul>
+                </div>
+
+                <!--빵-->
+                <div class="sub_title"  id="map_bread">
+                     <ul class="map">
+                         <li><a href=""><img src="../image/icon_home.png" alt="홈으로"></a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">MENU</a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">BREAD</a></li>
+                     </ul>
+                </div>
+
+                <!--아이스크림-->
+                <div class="sub_title"  id="map_icecream">
+                     <ul class="map">
+                         <li><a href=""><img src="../image/icon_home.png" alt="홈으로"></a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">MENU</a></li>
+                         <li><a href=""><img src="../image/icon_arrow.png" alt="하위메뉴"></a></li>
+                         <li><a href="">ICE CREAM</a></li>
+                     </ul>
+                </div>
+
             </article>
 
             <!--★productBox★-->
@@ -74,19 +121,19 @@
                     <h2>COFFEE</h2>
             			<div class='product'>
                             <!--IMG 파일 SRC안에 경로 추가-->
-            				<div><a href="#"><img src='../image/product/icecoffee.jpg'><br>아이스커피</br></a></div>
-            				<div><a href="#"><img src='../image/product/coldbrew.jpg'><br>콜드브루</br></a></div>
-            				<div><a href="#"><img src='../image/product/caramel.jpg'><br>카라멜 마끼아또<br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/icecoffee.jpg'></a></div><dd>아이스커피</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/coldbrew.jpg'></a></div><dd>콜드브루</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/caramel.jpg'></a></div><dd>카라멜 마끼아또</dd></dl>
             			</div>
             			<div class='product'>
-            				<div><a href="#"><img src='../image/product/espresso.jpg'><br>에스프레소</br></a></div>
-            				<div><a href="#"><img src='../image/product/latte.jpg'><br>라떼</br></a></div>
-            				<div><a href="#"><img src='../image/product/cappuccino.jpg'><br>카푸치노</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/espresso.jpg'></a></div><dd>에스프레소</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/latte.jpg'></a></div><dd>라떼</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/cappuccino.jpg'></a></div><dd>카푸치노</dd></dl>
             			</div>
                         <div class='product'>
-            				<div><a href="#"><img src='../image/product/mocha.jpg'><br>카페 모카</br></a></div>
-            				<div><a href="#"><img src='../image/product/vanilla.jpg'><br>바닐라 플랫 화이트</br></a></div>
-            				<div><a href="#"><img src='../image/product/frafcino.jpg'><br>에스프레소 프라푸치노</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/mocha.jpg'></a></div><dd>카페 모카</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/vanilla.jpg'></a></div><dd>바닐라 플랫 화이트</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/frafcino.jpg'></a></div><dd>에스프레소 프라푸치노</dd></dl>
             			</div>
                 </div><!--coffee 끝-->
 
@@ -97,19 +144,19 @@
                     <h2>BEVERAGE</h2>
             			<div class='product'>
                             <!--IMG 파일 SRC안에 경로 추가-->
-            				<div><a href="#"><img src='../image/product/mintchoco.jpg'><br>민트 초콜릿 칩</br></a></div>
-            				<div><a href="#"><img src='../image/product/mango.jpg'><br>망고 블렌디드</br></a></div>
-            				<div><a href="#"><img src='../image/product/strawberry.jpg'><br>딸기 요거트<br></a></div>
+                            <dl><div><a href="#"><img src='../image/product/mintchoco.jpg'></a></div><dd>민트 초콜릿 칩</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/mango.jpg'></a></div><dd>망고 블렌디드</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/strawberry.jpg'></a></div><dd>딸기 요거트<dd></dl>
             			</div>
             			<div class='product'>
-            				<div><a href="#"><img src='../image/product/peach.jpg'><br>복숭아 블렌디드</br></a></div>
-            				<div><a href="#"><img src='../image/product/yuzu.jpg'><br>유자 티</br></a></div>
-            				<div><a href="#"><img src='../image/product/earlgrey.jpg'><br>얼 그레이 티</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/peach.jpg'></a></div><dd>복숭아 블렌디드</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/yuzu.jpg'></a></div><dd>유자 티</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/earlgrey.jpg'></a></div><dd>얼 그레이 티</dd></dl>
             			</div>
                         <div class='product'>
-            				<div><a href="#"><img src='../image/product/choco.jpg'><br>초콜릿</br></a></div>
-            				<div><a href="#"><img src='../image/product/milk.jpg'><br>우유</br></a></div>
-            				<div><a href="#"><img src='../image/product/milktea.jpg'><br>밀크 티</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/choco.jpg'></a></div><dd>초콜릿</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/milk.jpg'></a></div><dd>우유</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/milktea.jpg'></a></div><dd>밀크 티</dd></dl>
             			</div>
                 </div><!--beverage 끝-->
 
@@ -121,19 +168,19 @@
                     <h2>BREAD</h2>
             			<div class='product'>
                             <!--IMG 파일 SRC안에 경로 추가-->
-            				<div><a href="#"><img src='../image/product/muffin.jpg'><br>블루베리 머핀</br></a></div>
-            				<div><a href="#"><img src='../image/product/bagel.jpg'><br>베이글</br></a></div>
-            				<div><a href="#"><img src='../image/product/scon.jpg'><br>스콘<br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/muffin.jpg'></a></div><dd>블루베리 머핀</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/bagel.jpg'></a></div><dd>베이글</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/scon.jpg'></a></div><dd>스콘<dd></dl>
             			</div>
             			<div class='product'>
-            				<div><a href="#"><img src='../image/product/bread.jpg'><br>식빵</br></a></div>
-            				<div><a href="#"><img src='../image/product/brioche.jpg'><br>브리오쉬</br></a></div>
-            				<div><a href="#"><img src='../image/product/pie.jpg'><br>파이</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/bread.jpg'></a></div><dd>식빵</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/brioche.jpg'></a></div><dd>브리오쉬</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/pie.jpg'></a></div><dd>파이</dd></dl>
             			</div>
                         <div class='product'>
-            				<div><a href="#"><img src='../image/product/cheeseball.jpg'><br>치즈 볼</br></a></div>
-            				<div><a href="#"><img src='../image/product/cheesecake.jpg'><br>치즈 케이크</br></a></div>
-            				<div><a href="#"><img src='../image/product/chococake.jpg'><br>초코 케이크</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/cheeseball.jpg'></a></div><dd>치즈 볼</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/cheesecake.jpg'></a></div><dd>치즈 케이크</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/chococake.jpg'></a></div><dd>초코 케이크</dd></dl>
             			</div>
                 </div><!--bread 끝-->
 
@@ -144,19 +191,19 @@
                     <h2>ICE CREAM</h2>
             			<div class='product'>
                             <!--IMG 파일 SRC안에 경로 추가-->
-            				<div><a href="#"><img src='../image/product/vanilla_ice.jpg'><br>바닐라 아이스크림</br></a></div>
-            				<div><a href="#"><img src='../image/product/choco_ice.jpg'><br>초콜릿 아이스크림</br></a></div>
-            				<div><a href="#"><img src='../image/product/vanilla_chip.jpg'><br>바닐라 초코칩 아이스크림<br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/vanilla_ice.jpg'></a></div><dd>바닐라 아이스크림</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/choco_ice.jpg'></a></div><dd>초콜릿 아이스크림</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/vanilla_chip.jpg'></a></div><dd>바닐라 초코칩 아이스크림<dd></dl>
             			</div>
             			<div class='product'>
-            				<div><a href="#"><img src='../image/product/nuts_vanilla.jpg'><br>바닐라 넛츠 아포가토</br></a></div>
-            				<div><a href="#"><img src='../image/product/nuts_choco.jpg'><br>초코 넛츠 아포가토</br></a></div>
-            				<div><a href="#"><img src='../image/product/vanilla_chip_af.jpg'><br>바닐라 초코칩 아포가토</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/nuts_vanilla.jpg'></a></div><dd>바닐라 넛츠 아포가토</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/nuts_choco.jpg'></a></div><dd>초코 넛츠 아포가토</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/vanilla_chip_af.jpg'></a></div><dd>바닐라 초코칩 아포가토</dd></dl>
             			</div>
                         <div class='product'>
-            				<div><a href="#"><img src='../image/product/vanilla_af.jpg'><br>바닐라 아포가토</br></a></div>
-            				<div><a href="#"><img src='../image/product/choco_chip_af.jpg'><br>초코 칩 아포가토</br></a></div>
-            				<div><a href="#"><img src='../image/product/choco_af.jpg'><br>초코 아포가토</br></a></div>
+            				<dl><div><a href="#"><img src='../image/product/vanilla_af.jpg'></a></div><dd>바닐라 아포가토</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/choco_chip_af.jpg'></a></div><dd>초코 칩 아포가토</dd></dl>
+            				<dl><div><a href="#"><img src='../image/product/choco_af.jpg'></a></div><dd>초코 아포가토</dd></dl>
             			</div>
                 </div><!--icecream 끝-->
 

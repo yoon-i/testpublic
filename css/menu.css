@@ -6,12 +6,11 @@
     z-index:10; /*스크롤시*/
     width:1280px; /*웹 크기 줄이면 글자 중앙 배치 안 됨*/
 }
-/**#FFB300**/
+
 #menuBox ul li {
     display:inline-block;
     padding:10px;
     padding-right:50px;
-    text-align:left; /*글자 왼쪽 정렬 안 됨*/
 }
 
 #menuBox a {
@@ -22,13 +21,13 @@
 
 
 /*subtitle*/
-#sub_title {
+.sub_title {
     width:100%;
     float:right;
     margin-top:30px;
 }
 
-#sub_title h1 {
+.sub_title h1 {
     font-size:36px;
     font-weight:bold;
     text-align:left;
@@ -38,19 +37,31 @@
     text-shadow: 2px 2px 2px #C2C2C2;
 }
 
-#map {
+/*map*/
+.map {
     float:right;
     margin-right:30px;
 }
-#map li {
+
+.map li {
     display:inline-block;
     padding:5px;
 }
 
-#map a {
+.map a {
     color:#737373;
     font-size:13px;
     text-decoration:none;
+}
+
+/*for js*/
+.sub_title{
+    display:none;
+}
+
+/*for js*/
+.click_sub_title{
+    display:block;
 }
 
 /*★상품 공통★*/
@@ -58,8 +69,18 @@
 .product div{
     display:inline-block;
     margin:15px;
-    /*width, height 주고
-    overflow:hidden 하면 이미지 원래 크기 안에서 확대됨*/
+    height:250px;
+    width:250px;
+    overflow:hidden;
+    margin-bottom:5px;
+}
+
+.product dl{
+    display:inline-block;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:10pt;
+    color: black;
 }
 
 .product img{
@@ -67,12 +88,6 @@
     width:250px;
 }
 
-.product a{
-    text-decoration: none;
-    font-weight:bold;
-    font-size:10pt;
-    color: black;
-}
 
 /*★상품 카테고리별★*/
 .productBox{
@@ -100,5 +115,3 @@
     top:0;
     z-index:10;
 }
-
-
