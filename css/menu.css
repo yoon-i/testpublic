@@ -55,14 +55,11 @@
 
 /*★상품 공통★*/
 
-/*
-.productBox {
-    display:none;
-}*/
-
 .product div{
     display:inline-block;
     margin:15px;
+    /*width, height 주고
+    overflow:hidden 하면 이미지 원래 크기 안에서 확대됨*/
 }
 
 .product img{
@@ -78,12 +75,12 @@
 }
 
 /*★상품 카테고리별★*/
-#coffee{
+.productBox{
     height: 1050px;
     background: #fff9ea;
 }
 
-#coffee h2{
+.productBox h2{
     color:#146eb4;
     font-weight:bold;
     font-size:25pt;
@@ -91,49 +88,11 @@
     margin-top:10px;
 }
 
-#beverage{
-    height: 1050px;
-    background: #fff9ea;
-}
-
-#beverage h2{
-    color:#146eb4;
-    font-weight:bold;
-    font-size:25pt;
-    margin-bottom:20px;
-    margin-top:10px;
-}
-
-#bread{
-    height: 1050px;
-    background: #fff9ea;
-}
-
-#bread h2{
-    color:#146eb4;
-    font-weight:bold;
-    font-size:25pt;
-    margin-bottom:20px;
-    margin-top:10px;
-}
-
-#icecream{
-    height: 1050px;
-    background: #fff9ea;
-}
-
-#icecream h2{
-    color:#146eb4;
-    font-weight:bold;
-    font-size:25pt;
-    margin-bottom:20px;
-    margin-top:10px;
-}
-
-.product div:hover{
+.product img:hover{
     transform: scale(1.1, 1.1);
     transition:transform 1s;
 }
+
 
 /*★for js★*/
 .menuBoxFixed{
