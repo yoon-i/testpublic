@@ -1,11 +1,26 @@
 /*signInUp*/
 
+/*login.html, signup.html의 배경, 글자 속성*/
+section {
+    height: 350px;
+    background: url(https://mblogthumb-phinf.pstatic.net/MjAxODAxMjZfMTk4/MDAxNTE2OTY0MjQ3Nzg5.ZkdaMcKD2TFFGY0wdICDR9Ra_ZtHeM7yqiQ1FDJpe-sg.4UWDDW1eNpnQ5wtHHGw9Xv194f_hJHL9d3BiBWQWpRwg.JPEG.silvercho7/201.jpg?type=w800);
+}
 
-/*logIn.html style*/
+h1{
+    color:#4d4d4d;
+}
+
+h4{
+    color:#4d4d4d;
+}
+
+/*login.html style*/
 #loginTable{
     border: solid 1px gray;
     margin:2% auto;
     padding:20px;
+    background:white;
+    opacity:0.9;
 }
 
 #loginTable tr td{
@@ -16,11 +31,13 @@
     text-align:left;
 }
 
-/*sign Up.html style*/
+/*signup.html style*/
 #signUpTable{
     border: solid 1px gray;
     margin:2% auto;
     padding:20px;
+    background:white;
+    opacity:0.9;
 }
 
 #signUpTable tr td{
@@ -31,7 +48,7 @@
     text-align:left;
 }
 
-/*logIn.html signUp.html의 버튼 style*/
+/*login.html signup.html의 버튼 style*/
 
 .btn{
     border:1px solid #FF9600;

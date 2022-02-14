@@ -49,19 +49,20 @@
         <form method="post" id="signUpForm" action="#폼의 내용을 전달할 문서명 정보가 전달될 서버 페이지의 주소"> <!--form: 입력양식 구성하고 서버로 사용자 입력정보의 전송을 담당하기 위함 -->
 
             <table id="signUpTable">
-            <tr><td>사용자 이름</td><td><input type="text" id="username" name="username" ></td></tr><!--이 데이터를 장고가 알아서하게함-->
-                <!--장고쓸 때 input안에 이거 쓰기    value="{{ form.username.value|default_if_none:'' }}"   -->
+                <tr><td colspan="2"><h4><br>angel in star 에 오신 것을 환영합니다!<br></h4></td></tr>
 
-            <tr><td>비밀번호</td><td><input type="password" id="password" name="password" ></td></tr>
-                <!--장고쓸 때 input안에 이거 쓰기    value="{{ form.password.value|default_if_none:'' }}"  -->
+                <tr><td>사용자 이름</td><td><input type="text" id="username" name="username" ></td></tr><!--이 데이터를 장고가 알아서하게함-->
+                    <!--장고쓸 때 input안에 이거 쓰기    value="{{ form.username.value|default_if_none:'' }}"   -->
+
+                <tr><td>비밀번호</td><td><input type="password" id="password" name="password" ></td></tr>
+                    <!--장고쓸 때 input안에 이거 쓰기    value="{{ form.password.value|default_if_none:'' }}"  -->
 
 
-            <tr><td>이메일</td><td><input type="email" id="email" name="email" ></td></tr>
+                <tr><td>이메일</td><td><input type="email" id="email" name="email" ></td></tr>
 
-            <tr>
-                <td></td><td colspan="2" align="right"><br><input type="submit" value="완료" class=btn onclick="openWindow()"></td>
-
-            </tr>
+                <tr>
+                    <td></td><td colspan="2" align="right"><br><input type="submit" value="완료" class=btn onclick="openWindow()"></td>
+                </tr>
             </table>
 
         </form>
