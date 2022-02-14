@@ -1,0 +1,45 @@
+/*signInUp*/
+
+
+/*logIn.html style*/
+#loginTable{
+    border: solid 1px gray;
+    margin:2% auto;
+    padding:20px;
+}
+
+#loginTable tr td{
+    text-align:left;
+}
+
+#loginTable tr td{
+    text-align:left;
+}
+
+/*sign Up.html style*/
+#signUpTable{
+    border: solid 1px gray;
+    margin:2% auto;
+    padding:20px;
+}
+
+#signUpTable tr td{
+    text-align:left;
+}
+
+#signUpTable tr td{
+    text-align:left;
+}
+
+/*logIn.html signUp.html의 버튼 style*/
+
+.btn{
+    border:1px solid #FF9600;
+    border-radius:15%;
+    color: #FF9600;
+    padding:5px;
+}
+
+.btn:hover{
+    box-shadow: 0 5px 5px 0 gray;
+}
