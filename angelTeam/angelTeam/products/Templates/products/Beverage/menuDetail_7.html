@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{%static 'css/menuDetail.css'%}">
     <script src="{%static 'js/jquery-3.5.1.min.js'%}"></script>
     <script src="{%static 'js/menuDetail.js'%}"></script>
+    <script src="{%static 'js/menu.js'%}"></script>
     <script type="text/javascript"></script>
 </head>
 <body>
@@ -43,11 +44,11 @@
          <!--메뉴: COFFEE / BEVERAGE / BREAD / ICE CREAM-->
          <div id="menuBox">
              <ul id="menu">
-                 <li><a href="#">SEE ALL</a></li>
-                 <li><a href="#">COFFEE</a></li>
-                 <li><a href="#">BEVERAGE</a></li>
-                 <li><a href="#">BREAD</a></li>
-                 <li><a href="#">ICE CREAM</a></li>
+                 <li><a href="{%url 'main:menu'%}">SEE ALL</a></li>
+                 <li><a href="{%url 'main:menu'%}#coffee">COFFEE</a></li>
+                 <li><a href="{%url 'main:menu'%}#beverage">BEVERAGE</a></li>
+                 <li><a href="{%url 'main:menu'%}#bread">BREAD</a></li>
+                 <li><a href="{%url 'main:menu'%}#icecream">ICE CREAM</a></li>
              </ul>
          </div><!--menuBox 끝-->
      </article>
@@ -60,11 +61,11 @@
          <div id="sub_title">
              <h1>BEVERAGE</h1>
              <ul id="map">
-                 <li><a href=""><img src="{%static 'image/icon_home.png'%}" alt="홈으로"</a></li>
+                 <li><a href="{%url 'main:main'%}"><img src="{%static 'image/icon_home.png'%}" alt="홈으로"</a></li>
                  <li><a href=""><img src="{%static 'image/icon_arrow.png'%}" alt="하위메뉴"</a></li>
-                 <li><a href="">MENU</a></li>
+                 <li><a href="{%url 'main:menu'%}">MENU</a></li>
                  <li><a href=""><img src="{%static 'image/icon_arrow.png'%}" alt="하위메뉴"</a></li>
-                 <li><a href="">BEVERAGE</a></li>
+                 <li><a href="{%url 'main:menu'%}#beverage">BEVERAGE</a></li>
                  <li><a href=""><img src="{%static 'image/icon_arrow.png'%}" alt="하위메뉴"</a></li>
                  <li><a href="">초콜릿</a></li>
              </ul>
