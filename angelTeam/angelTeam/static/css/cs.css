@@ -19,7 +19,7 @@
 /***** 배너 밑 faq 박스 만듦 *****/
 #faqBox {
     width:100%;
-    height:300px;
+    height:400px;
     float:left;
     background-color:white;
     margin-top:0;
@@ -29,7 +29,7 @@
 #faq {
     position:relative;
     width:70%;
-    height:240px;
+    height:300px;
     float:left;
     background-color:#EAEAEA;
     margin-top:30px;
@@ -37,7 +37,7 @@
 }
 
 #faq h3 {
-    font-size:16px;
+    font-size:18px;
     text-align:left;
     margin-left:40px;
     padding-top:25px;
@@ -49,7 +49,7 @@
 #questionBox {
     position:relative;
     width:70%;
-    height:50px;
+    height:80px;
     border-radius:10px;
     background-color:#D8D8D8;
     float:left;
@@ -61,8 +61,8 @@
     display:inline-block;
     position:relative;
     width:80%;
-    height:30px;
-    font-size:15px;
+    height:60px;
+    font-size:18px;
     font-weight:bold;
     border:0;
     border-radius:15px;
@@ -77,14 +77,14 @@
 #searchBtn {
     position:relative;
     float:right;
-    padding-top:0;
+    padding-top:10px;
     padding-right:20px;
     cursor:pointer;
 }
 
 #searchBtn img{
-    width:55px;
-    height:55px;
+    width:70px;
+    height:70px;
 }
 
 /**** 답변창 ****/
@@ -93,14 +93,14 @@
     display:inline-block;
     position:relative;
     width:80%;
-    height:80px;
+    height:110px;
     font-size:15px;
     font-weight:bold;
     border:0;
     border-radius:18px;
     outline:none;
     background-color:white;
-    margin-top:85px;
+    margin-top:120px;
     margin-left:30px;
     font-family:"한컴산뜻돋움";  /*** 나중에 전체 적용 ***/
 }
@@ -109,16 +109,16 @@
 #customerBox {
     position:relative;
     width:100%;
-    height:40%;
+    height:550px;
     float:left;
-    padding-top:10px;
+    padding-top:0;
     background-color:white;
 }
 
 #csBox {
     position:relative;
     width:70%;
-    height:250px;
+    height:300px;
     float:left;
     background-color:#EAEAEA;
     margin-bottom:30px;
@@ -126,7 +126,7 @@
 }
 
 #csBox h3 {
-    font-size:16px;
+    font-size:18px;
     text-align:left;
     margin-left:40px;
     padding-top:30px;
@@ -136,7 +136,7 @@
 #writeBox {
     position:relative;
     width:70%;
-    height:120px;
+    height:180px;
     border-radius:10px;
     background-color:#E7E7E7;
     float:left;
@@ -146,18 +146,18 @@
 
 #opinion {
     width:95%;
-    height:150px;
+    height:180px;
     margin-top:20px;
     border-radius:15px;
     border:none;
     background-color:white;
-    font-size:15px;
+    font-size:18px;
     font-family:"한컴산뜻돋움";  /*** 나중에 전체 적용 ***/
 }
 
-#opinionBtn {
-    width:10%;
-    height:30px;
+#popBtn {
+    width:120px;
+    height:80px;
     position:relative;
     margin-top:65px;
     padding-left:5px;
@@ -179,7 +179,7 @@
 #imgBox img {
     position:relative;
     width:80%;
-    height:80%;
+    height:500px;
 }
 
 #imgBox2 {
@@ -193,18 +193,17 @@
 #imgBox2 img {
     position:relative;
     width:80%;
-    height:350px;
+    height:490px;
     opacity:0.8;
 }
 
 #bottomImg {
-    position:relative;
-    width:100%;
-
+    width:90%;
 }
 
 #bottomImg img {
     position:relative;
-    width:70%;
-    height:170px;
+    width:90%;
+    height:200px;
+    padding-top:90px;
 }
