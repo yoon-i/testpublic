@@ -16,22 +16,22 @@
     <div id="wrap">
         <header>
             <div id="headerBox">
-                <div id="logoBox"><a href="main.html"><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
+                <div id="logoBox"><a href="{%url 'main:main'%}"><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
                 <div id="loginBox">
                     <ul id="signIn">
                         <li><a href="#">Sign In</a></li>
                         <li><a href="#">Sign Up</a></li>
                         <li><a href="#">My Angels</a></li>
-                        <li><a href="store.html">STORE</a></li>
+                        <li><a href="{%url 'main:store'%}">STORE</a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <div id="mainMenuBox">
             <ul id="menuItem">
-                <li><a href="#">MENU</a></li>
-                <li><a href="store.html">STORE</a></li>
-                <li><a href="CS.html">SERVICE</a></li>
+                <li><a href="{%url 'main:menu'%}">MENU</a></li>
+                <li><a href="{%url 'main:store'%}">STORE</a></li>
+                <li><a href="{%url 'main:cs'%}">SERVICE</a></li>
             </ul>
         </div>
 
