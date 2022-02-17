@@ -22,3 +22,5 @@ def signup(request) :
     return render(request, 'accounts/signup.html', {'form':form})
 
 
+def welcome(request) :
+    return render(request,'accounts/welcome.html')
