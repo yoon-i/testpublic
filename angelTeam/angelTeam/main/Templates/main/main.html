@@ -20,20 +20,22 @@
                         {% endif %}
                         <li><a href="{%url 'accounts:signup' %}">Sign Up</a></li>
                         <li><a href="#">My Angels</a></li>
-                        <li><a href="store.html">STORE</a></li>
+                        <li><a href="{%url 'main:store'%}">STORE</a></li>
+                    </ul>
+                </div>
+                <p id="search_icon"><a href=""><img src="{%static 'image/icon_magnifier_black.png'%}"></a></p>
+                <div id="mainMenuBox">
+                    <ul id="menuItem">
+                            <li><a href="{%url 'main:menu'%}">MENU</a></li>
+                            <li><a href="{%url 'main:store'%}">STORE</a></li>
+                            <li><a href="{%url 'main:cs'%}">SERVICE</a></li>
                     </ul>
                 </div>
             </div>
         </header>
 
         <nav>
-            <div id="mainMenuBox">
-                <ul id="menuItem">
-                    	<li><a href="{%url 'main:menu'%}">MENU</a></li>
-                        <li><a href="store.html">STORE</a></li>
-                        <li><a href="{%url 'main:cs'%}">SERVICE</a></li>
-                </ul>
-            </div>
+
         </nav>
 
         <section>
