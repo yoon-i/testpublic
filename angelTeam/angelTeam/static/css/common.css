@@ -10,7 +10,8 @@
     background-color:#eeeeee; /*배경색*/
     text-align:center;
     position:relative; /*최상위태그의 포지션 지정*/
-    font-family:'Segoe UI Regular','한컴산뜻돋움';
+    font-family: 'Lora', 'Gowun Batang', serif;
+
 }
 
 /* 모든 <img>태그 테두리, 마진 없음*/
@@ -20,14 +21,15 @@ img {border:0; margin:0;}
 /***************************** HeaderBox *****************************/
 #headerBox {
     background-color:white;
-    height:160px;
+    height:170px;
     padding:0;
 }
 
 #logoBox {
     float:left;
-    margin-left:70px;
-    margin-top:15px;
+    margin-left:100px;
+    margin-top:10px;
+    position:absolute;
 }
 
 #logoBox img {
@@ -38,10 +40,9 @@ img {border:0; margin:0;}
 }
 
 #loginBox {
-    margin-top:10px;
-    margin-right:50px;
+    margin-top:8px;
+    margin-right:170px;
     float:right;
-    font-size:14px;
 }
 
 #loginBox ul li {
@@ -51,14 +52,14 @@ img {border:0; margin:0;}
 
 #loginBox a {
     color:#FF9600;
-    font-weight:bold;
     text-decoration:none;
+    font-size:15px;
 }
 
 #search_icon {
     display: block;
     position: absolute;
-    right: 10px;
+    right: 120px;
     top: 20px;
     width:30px;
     height:30px;
@@ -67,33 +68,37 @@ img {border:0; margin:0;}
     border-radius: 5px;
 }
 
-#search_icon img { top:5px;}
+#search_icon img { margin-top:5px; float:center; }
 
 /***************************** mainMenuBox *****************************/
 #mainMenuBox {
-    width:75%;
+    width:100%;
     background-color:white;
-    float:right;
     display:inline-block;
-    margin-top:50px;
+    margin-top:43px;
+}
+
+#menuItem {
+    width:75%;
+    float:right;
 }
 
 #mainMenuBox ul li {
     display:inline-block;
-    padding:10px;
+    padding-right:90px;
 }
 
 #mainMenuBox a {
     color:#FF9600;
     font-weight:bold;
     text-decoration:none;
+    font-size:21px;
 }
 
 
 /***************************** footerBox *****************************/
 #footerBox div {
     background-color:#FFB300;
-    border:solid 1px #FF9600;
     padding:20px;
     clear : both;
 }
@@ -108,12 +113,12 @@ img {border:0; margin:0;}
 #bottomMenuBox li {
     display:inline-block;
     text-align:center;
-    padding:5px;
+    padding-right:50px;
+    font-size:15px;
 }
 
 #bottomMenuBox a {
     color:white;
-    font-weight:bold;
     text-decoration:none;
 }
 
@@ -122,8 +127,8 @@ img {border:0; margin:0;}
     text-align:center;
     padding:5px;
     color:white;
-    font-weight:bold;
     text-decoration:none;
+    font-size:14px;
 }
 
 #moveToTopBox img {
