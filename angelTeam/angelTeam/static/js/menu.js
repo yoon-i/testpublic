@@ -69,5 +69,40 @@ $(function(){
         }
     });
 
+    /*말풍선*/
+    $(document).ready(function(){
+
+        $('.bubble').hide();
+
+        setInterval(function(){
+            $('.bubble').fadeIn(3000);
+
+            var msgBox=new Array();
+            msgBox[0]="시원한 아이스커피는 어떠세요?";
+            msgBox[1]="동남아가 생각나는 콜드브루를 추천해요!";
+            msgBox[2]="향긋한 카라멜 마키야또는 어떠신가요?";
+            msgBox[3]="Angel in Star만의 에스프레소를 맛보세요";
+            msgBox[4]="오랜만에 상큼한 망고 블렌디드 어떤가요?";
+            msgBox[5]="인기메뉴 유자 티를 추천해요!";
+            msgBox[6]="오랜만에 따뜻한 카푸치노가 좋겠군요!";
+            msgBox[7]="신메뉴 블루베리 머핀을 맛보세요!";
+            msgBox[8]="오늘의 디저트로 치즈볼을 추천드려요";
+            msgBox[9]="달콤한 바닐라 초코칩 아포가토는 어떤가요?";
+            msgBox[10]="시즌한정메뉴 딸기요거트도 있어요";
+
+            var random_num = Math.floor(Math.random()*(msgBox.length));
+
+            var original_msg = document.getElementById("msg");
+
+            original_msg.textContent = (msgBox[random_num]);
+
+        },10000);
+
+
+
+    });
+
+
+
 
 });
