@@ -18,6 +18,7 @@
     margin-bottom:7px;
     background-color:#003E00;
     font-size:20px;
+    font-family:"한컴산뜻돋움";
     font-weight:bold;
     color:#EAEAEA;
     padding-top:15px;
@@ -45,17 +46,19 @@
     width:100%;
     background-color:#333;
     color:#fff;
+    font-family:"한컴산뜻돋움";
 }
 
 #user-table > thead > tr > th {
     padding:8px;
     width:300px;
-
+    font-family:"한컴산뜻돋움";
 }
 
 #user-table > tbody > tr > td {
     border-bottom:1px solid gray;
     padding:8px;
+    font-family:"한컴산뜻돋움";
 }
 
 
@@ -75,6 +78,7 @@
 #placeList li {
     display:inline-block;
     font-size:14px;
+    font-family:"한컴산뜻돋움";
     color:black;
     padding-top:10px;
     padding-left:0;
