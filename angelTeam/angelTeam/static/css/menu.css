@@ -122,8 +122,8 @@
 .bubble
 {
     width: 205px;
-    height: 65px;
-    padding: 0px;
+    height: 60px;
+    padding: 0;
     background: #FFFFFF;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -151,12 +151,21 @@
     opacity:0.9;
     margin-left:5px;
     margin-top:20px;
-    line-height:65px;
-    font-size:7pt;
+    font-size:9pt;
+    text-align:left;
+
 }
 
 .bubble img{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     margin-top:20px;
+    margin-left:25px;
+}
+
+#msg{
+    margin-left:20px;
+    margin-right:20px;
+    margin-top:10px;
+    margin-bottom:10px;
 }
