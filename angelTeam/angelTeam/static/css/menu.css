@@ -117,3 +117,46 @@
     top:0;
     z-index:10;
 }
+
+/*말풍선 css*/
+.bubble
+{
+    width: 205px;
+    height: 65px;
+    padding: 0px;
+    background: #FFFFFF;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.bubble:after
+{
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 13px 7px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -13px;
+    left: 32px;
+}
+
+.bubble{
+    float:left;
+    position:fixed;
+    z-index:20;
+    opacity:0.9;
+    margin-left:5px;
+    margin-top:20px;
+    line-height:65px;
+    font-size:7pt;
+}
+
+.bubble img{
+    height:100px;
+    width:100px;
+    margin-top:20px;
+}
