@@ -114,7 +114,7 @@ img {border:0; margin:0;}
     display:inline-block;
     text-align:center;
     padding-right:50px;
-    font-size:15px;
+    font-size:15.5px;
 }
 
 #bottomMenuBox a {
@@ -125,10 +125,11 @@ img {border:0; margin:0;}
 #companyInfoBox li {
     display:inline-block;
     text-align:center;
-    padding:5px;
+    padding-right:30px;
+    padding-bottom:20px;
     color:white;
     text-decoration:none;
-    font-size:14px;
+    font-size:14.5px;
 }
 
 #moveToTopBox img {
