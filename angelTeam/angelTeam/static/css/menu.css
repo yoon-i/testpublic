@@ -109,19 +109,14 @@
 }
 
 
-/*★for js★*/
-.menuBoxFixed{
-    position:fixed;
-    top:0;
-    z-index:10;
-}
+
 
 /*말풍선 css*/
 .bubble
 {
     width: 205px;
     height: 60px;
-    padding: 0;
+    padding: 0px;
     background: #FFFFFF;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -148,7 +143,7 @@
     z-index:20;
     opacity:0.9;
     margin-left:5px;
-    margin-top:20px;
+    margin-top:180px; /*버블 이미지 위치 조절(스크롤 내리면 헤더와 겹침)*/
     font-size:9pt;
     text-align:left;
 

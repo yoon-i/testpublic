@@ -16,7 +16,7 @@
     <script src="{%static 'js/index.js'%}"></script>
 </head>
 <body>
- <div id="wrap">
+   <div id="wrap">
         <header>
             <div id="headerBox">
                 <div id="logoBox"><a href="{%url 'main:main'%}"><img src="{%static 'image/logo.png'%}" id="logoImg"></a></div>
@@ -28,7 +28,7 @@
                         <li><a href="{%url 'accounts:login'%}">Sign In</a></li>
                         {% endif %}
                         <li><a href="{%url 'accounts:signup'%}">Sign Up</a></li>
-                        <li><a href="#">My Angels</a></li>
+                        <li><a href="{%url 'accounts:board' %}">My Angels</a></li>
                         <li><a href="{%url 'main:store'%}">STORE</a></li>
                     </ul>
                 </div>
@@ -42,23 +42,23 @@
                             <li><a href="">STORY</a></li>
                     </ul>
                 </div>
+                <!--★menuBar★-->
+                <article id="menuProduct">
+                <!--메뉴: COFFEE / BEVERAGE / BREAD / ICE CREAM-->
+                <div id="menuBox">
+                    <ul id="menu">
+                    <li><a href="{%url 'main:menu'%}">SEE ALL</a></li>
+                    <li><a href="{%url 'main:menu'%}#coffee">COFFEE</a></li>
+                    <li><a href="{%url 'main:menu'%}#beverage">BEVERAGE</a></li>
+                    <li><a href="{%url 'main:menu'%}#bread">BREAD</a></li>
+                    <li><a href="{%url 'main:menu'%}#icecream">ICE CREAM</a></li>
+                    </ul>
+                </div><!--menuBox 끝-->
+                </article>
             </div>
         </header>
 <!-- 위에는 header logo mainMenu Box 구역 -->
 
-     <!--★menuBar★-->
-     <article id="menuProduct">
-         <!--메뉴: COFFEE / BEVERAGE / BREAD / ICE CREAM-->
-         <div id="menuBox">
-             <ul id="menu">
-                 <li><a href="{%url 'main:menu'%}">SEE ALL</a></li>
-                 <li><a href="{%url 'main:menu'%}#coffee">COFFEE</a></li>
-                 <li><a href="{%url 'main:menu'%}#beverage">BEVERAGE</a></li>
-                 <li><a href="{%url 'main:menu'%}#bread">BREAD</a></li>
-                 <li><a href="{%url 'main:menu'%}#icecream">ICE CREAM</a></li>
-             </ul>
-         </div><!--menuBox 끝-->
-     </article>
 
 <!-- 제품상세 container -->
      <section>
