@@ -60,15 +60,6 @@ $(function(){
         $('#map_icecream').addClass('click_sub_title');
     });
 
-    $(window).on('scroll',function(){
-        if($(document).scrollTop() >= ($('#headerBox').height()+$('#mainMenuBox').height())){
-            $('#menuProduct').addClass('menuBoxFixed'); /*menu.css에 있음*/
-        }
-        else{
-            $('#menuProduct').removeClass('menuBoxFixed');
-        }
-    });
-
     /*말풍선*/
     $(document).ready(function(){
 
@@ -97,9 +88,18 @@ $(function(){
             original_msg.textContent = (msgBox[random_num]);
 
         },10000);
+    });
 
+    //윈도우객체 스크롤시(이벤트-scroll) document의 메인 메뉴 고정
+    $(window).on('scroll',function(){ //윈도우객체에서 scroll이벤트가 발생하면
+        //스크롤되는 document객체의 top위치가 #headerBox height(index.css 6라인 60px) 이상이면 메인메뉴는 고정되고 그림자를 표시
+        if($(document).scrollTop() >= $('#headerBox').height()){
+        //메인메뉴 고정, 그림자 표시를 위한 동적 클래스를 부착(index.css에 생성해놨음 20~28라인)
+            $('.bubble').addClass('bubbleBoxFixed');
 
-
+        }else{
+            $('.bubble').removeClass('bubbleBoxFixed');
+        }
     });
 
 
