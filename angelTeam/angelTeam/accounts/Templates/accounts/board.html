@@ -1,8 +1,23 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load bootstrap4 %}
 {% block content %}
+
+    <img src="{%static 'image/commu.png'%}" style="width:100%;">
+    <img src="{%static 'image/community.jpg'%}" style="width:70%;height:280px;margin-top:20px;">
+    <img src="{%static 'image/commuSide.jpg'%}" style="float:right; width:24%;margin-right:40px;margin-top:10px;">
+    <div style="margin-left:100px;">
+        <form action="" method="POST" style="max-width:500px; margin:4rem;">
+            {% csrf_token %}
+            {% bootstrap_form boardForm %}
+            <button type="submit" class="btn btn-primary rounded-pill col-12" style="background-color:#EAEAEA;">POST</button>
+        </form>
+    </div>
+
 {% if board %}
-    <table style="text-align:center; width:700px; border:1px solid black;">
+    <table style="text-align:center; width:950px;
+    border:1px solid black;margin-right:450px;margin-bottom:40px;
+    font-family: 'Lora', 'Gowun Batang';">
         <thead>
             <tr>
                 <th>번호</th>
@@ -24,11 +39,5 @@
             {% endfor %}
     </table>
 {% endif %}
-    <div>
-        <form action="" method="POST" style="max-width:500px; margin:4rem;">
-            {% csrf_token %}
-            {% bootstrap_form boardForm %}
-            <button type="submit" class="btn btn-primary rounded-pill col-12">POST</button>
-        </form>
-    </div>
+
 {% endblock %}

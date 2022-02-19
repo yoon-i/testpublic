@@ -33,8 +33,7 @@ def board(request):
     if request.method == 'POST':
         title = request.POST['title']
         content = request.POST['content']
-        writer = request.POST['writer']
-
+        writer = request.user
         board = Board(
             title=title,
             content=content,
