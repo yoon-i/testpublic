@@ -3,6 +3,8 @@
 #menuProduct{
     width:100%;
     background-color:#146eb4;
+    margin-top:25px;
+    position:relative;
 }
 
 
@@ -143,7 +145,7 @@
     z-index:20;
     opacity:0.9;
     margin-left:5px;
-    margin-top:180px; /*버블 이미지 위치 조절(스크롤 내리면 헤더와 겹침)*/
+    margin-top:200px; /*버블 이미지 위치 조절(스크롤 내리면 헤더와 겹침)*/
     font-size:9pt;
     text-align:left;
 
