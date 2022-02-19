@@ -51,10 +51,12 @@ img {border:0; margin:0;}
 }
 
 #loginBox a {
-    color:#FF9600;
+    color:#805900;
     text-decoration:none;
     font-size:15px;
 }
+
+#signIn a:hover { text-decoration:underline; }
 
 #search_icon {
     display: block;
@@ -64,7 +66,7 @@ img {border:0; margin:0;}
     width:30px;
     height:30px;
     background: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #805900;
     border-radius: 5px;
 }
 
@@ -81,19 +83,41 @@ img {border:0; margin:0;}
 #menuItem {
     width:75%;
     float:right;
+    align-items: center;
 }
 
 #mainMenuBox ul li {
     display:inline-block;
-    padding-right:90px;
+    padding-right:75px;
 }
 
 #mainMenuBox a {
-    color:#FF9600;
+    color:#FFB300;
     font-weight:bold;
     text-decoration:none;
     font-size:21px;
+    position:relative;
+    padding:10px;
 }
+
+#mainMenuBox a::after {
+    content: "";
+    position:absolute;
+    z-index:5;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    width:0;
+    height:4px;
+    background: #805900;
+    transition: all .5s ease-out;
+}
+
+#mainMenuBox a:hover::after {
+    width:100%;
+}
+
+#menuItem a:hover{ color:#805900;}
 
 
 /***************************** footerBox *****************************/
