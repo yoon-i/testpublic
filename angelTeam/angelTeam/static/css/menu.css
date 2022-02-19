@@ -5,9 +5,7 @@
     background-color:#146eb4;
 }
 
-#menuBox{
-    z-index:10; /*스크롤시*/
-}
+
 
 #menuBox ul li {
     display:inline-block;
