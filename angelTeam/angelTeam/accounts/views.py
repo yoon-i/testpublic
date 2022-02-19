@@ -40,7 +40,7 @@ def board(request):
             writer=writer,
         )
         board.save()
-        return redirect('board')
+        return redirect('accounts/board.html')
     else:
         boardForm = BoardForm
         board = Board.objects.all()

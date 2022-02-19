@@ -6,14 +6,14 @@
     width:100%;
     height:30%;
     line-height:80px;
-    padding-top:50px;
+    padding-top:25px;
     background-color:#063D31;
 }
 
 #faqImgBox img {
     display:inline-block;
     width:100%;
-    padding-top:20px;
+    padding-top:10px;
 }
 
 /***** 배너 밑 faq 박스 만듦 *****/
@@ -29,7 +29,7 @@
 #faq {
     position:relative;
     width:70%;
-    height:300px;
+    height:320px;
     float:left;
     background-color:#EAEAEA;
     margin-top:30px;
@@ -41,7 +41,6 @@
     text-align:left;
     margin-left:40px;
     padding-top:25px;
-
 }
 
 
@@ -61,14 +60,14 @@
     display:inline-block;
     position:relative;
     width:80%;
-    height:60px;
+    height:55px;
     font-size:18px;
     font-weight:bold;
     border:0;
     border-radius:15px;
     outline:none;
     background-color:white;
-    margin-top:8px;
+    margin-top:10px;
     margin-right:0;
 
 }
@@ -88,7 +87,6 @@
 }
 
 /**** 답변창 ****/
-
 #answer {
     display:inline-block;
     position:relative;
@@ -102,14 +100,13 @@
     background-color:white;
     margin-top:120px;
     margin-left:30px;
-
 }
 
 /**** 사용자 게시판 *****/
 #customerBox {
     position:relative;
     width:100%;
-    height:550px;
+    height:600px;
     float:left;
     padding-top:0;
     background-color:white;
@@ -117,7 +114,7 @@
 
 #csBox {
     position:relative;
-    width:70%;
+    width:50%;
     height:300px;
     float:left;
     background-color:#EAEAEA;
@@ -132,38 +129,68 @@
     padding-top:30px;
 }
 
-#writeBox {
-    position:relative;
-    width:70%;
-    height:180px;
-    border-radius:10px;
-    background-color:#E7E7E7;
-    float:left;
-    margin-top:0;
-    margin-left:30px;
+#csBox h {
+    font-size:16px;
+    padding-top:30px;
+    font-weight:bold;
 }
 
-#opinion {
-    width:95%;
+#faqList {
+    width:90%;
     height:180px;
     margin-top:20px;
+    margin-left:30px;
+    float:left;
     border-radius:15px;
     border:none;
     background-color:white;
     font-size:18px;
 }
 
-#popBtn {
-    width:120px;
-    height:80px;
-    position:relative;
-    margin-top:65px;
-    padding-left:5px;
-    border:none;
-    border-radius:18px;
-    background-color:#DBDBDB;
-    cursor:pointer;
+#faqList li {
+    text-align:left;
+    font-size:17px;
+    font-weight:bold;
+    padding-left:10px;
 }
+
+/***** 고객의 소리로 이동 *****/
+#moveToCommu {
+    position:relative;
+    width:20%;
+    height:300px;
+    float:right;
+    background-color:#EAEAEA;
+    margin-bottom:30px;
+    margin-left:30px;
+}
+
+#moveToCommu h {
+    font-weight:bold;
+    font-size:18px;
+    padding-top:10px;
+}
+
+#moveToCommu img {
+    display:inline-block;
+    width:170px;
+    height:170px;
+    padding-top:20px;
+}
+
+#moveToCommunity {
+    display:inline-block;
+    float:bottom;
+    width:180px;
+    height:40px;
+    margin-top:15px;
+    font-size:16px;
+    background-color:#F6F6F6;
+    border-radius:10px;
+    border:3px solid #752B00;
+}
+
+#moveToCommunity:hover{color:#752B00;font-weight:bold;}
 
 /***** 사이드 이미지 *****/
 #imgBox {
@@ -195,12 +222,16 @@
 }
 
 #bottomImg {
-    width:90%;
+    position:relative;
+    width:75%;
+    float:left;
+    padding-top:20px;
 }
 
 #bottomImg img {
     position:relative;
+    display:inline-block;
     width:90%;
     height:200px;
-    padding-top:90px;
+
 }

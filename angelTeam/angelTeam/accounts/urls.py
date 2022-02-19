@@ -10,5 +10,6 @@ urlpatterns =[
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
     path('signup/', views.signup, name='signup'),
     path('signup/welcome.html', views.welcome, name='welcome'),
-    path('board/', views.board, name="board"),
+    path('board.html/', views.board, name="board"),
+    path('board.html/accounts/board.html', views.board, name="acboard"),
 ]

@@ -5,16 +5,18 @@ section {
     height: 750px;
     background: url(https://mblogthumb-phinf.pstatic.net/MjAxODAxMjZfMTk4/MDAxNTE2OTY0MjQ3Nzg5.ZkdaMcKD2TFFGY0wdICDR9Ra_ZtHeM7yqiQ1FDJpe-sg.4UWDDW1eNpnQ5wtHHGw9Xv194f_hJHL9d3BiBWQWpRwg.JPEG.silvercho7/201.jpg?type=w800);
     align:center;
+    font-family: 'Gowun Batang', serif;
 }
 .signTxt{
     color:#4d4d4d;
-    text-shadow:5px 5px 5px #bababa;
-
+    text-shadow:5px 5px 5px white;
+    /*text-shadow:5px 5px 5px #bababa;*/
     line-height:150px;
 }
 
 h1{
     color:#4d4d4d;
+    font-weight:bold;
 }
 
 h4{

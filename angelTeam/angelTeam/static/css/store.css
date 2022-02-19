@@ -39,6 +39,7 @@
     text-align:center;
     border-collapse:collapse;
     font-size:15px;
+    font-weight:bold;
 }
 
 #user-table > thead > tr {
