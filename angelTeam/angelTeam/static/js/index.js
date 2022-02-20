@@ -14,11 +14,24 @@ $(function(){
             $('#headerBox').removeClass('headerBoxFixed');
         }
     });
+});
 
-    //moveToTop 이미지 클릭시 화면 맨 위로 이동
-    $('#moveToTop').on('click',function(){
-        $('html, body').animate({scrollTop:0},500)
+
+
+$(document).ready(function() {
+    $("#moveToTopBox").hide(); //버튼 최상단에서는 출력하지 않음
+
+    $(window).on('scroll',function(){
+        if($(this).scrollTop() > 500){ // 스크롤탑이 1000보다 클 때
+            $('#moveToTopBox').fadeIn(); //버튼이 fadeIn되며 출력
+        } else { // 1000보다 작을 때
+            $('#moveToTopBox').fadeOut(); //버튼 fadeOut되며 제거
+        }
     });
 
+    //moveToTop 이미지 클릭시 화면 맨 위로 이동
+    $('#moveToTopBox').on('click',function(){
+        $('html, body').animate({scrollTop:0},500);
+    });
 });
 
