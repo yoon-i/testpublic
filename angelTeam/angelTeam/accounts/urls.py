@@ -14,8 +14,8 @@ urlpatterns =[
     path('board.html/accounts/board.html', views.board, name="acboard"),
 
     path('<int:pk>', views.boardEdit, name="editboard"),
-    #path('accounts/board.html', views.board, name="board"),
+    path('accounts/board.html', views.board, name="board"),
     #path('accounts/', include('accounts.urls'), name='accounts'),
     path('/<int:pk>', views.boardDelete, name="delboard"),
-    #path('/accounts/board.html', views.board, name="board"),
+    path('/accounts/board.html', views.board, name="board"),
 ]
