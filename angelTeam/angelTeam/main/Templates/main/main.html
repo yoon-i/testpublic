@@ -48,27 +48,23 @@
 
       <div id="slider-wrap" >
           <ul id="slider">
-             <li>
-               <!--배너3-->
-                <div class="banner">
-                    <h1><a href="{%url 'main:menu'%}#coffee"></a></h1>
-                    <img id ="banner3" src="{%static 'image/banner3.png'%}">
-                </div>
+              <!--이벤트1-->
+             <li class="banner">
+                 <a href="{%url 'main:menu'%}#coffee"><img id ="banner3" src="{%static 'image/banner3.png'%}"></a>
              </li>
 
-             <li>
-                <div>
-
-                </div>
-             <img src="{%static 'image/event2.png'%}">
+              <!--이벤트2-->
+             <li class="spring">
+                 <img src="{%static 'image/event2.png'%}">
              </li>
 
+              <!--이벤트3-->
              <li>
-                <div>
                     <h3>이벤트 정보3</h3>
                         <a href ="https://www.naver.com/">
                             <span>자세히보기</span> </a>
-                </div>
+             </li>
+
 
           </ul>
 
@@ -96,10 +92,19 @@
         <img id ="photo1"  src="{%static 'image/coffeebeans.png'%}" >
     </div>
 
-        <div class="fixed02">
-            <section><h3><a href="{%url 'main:products:bread8'%}"> 상품설명하는곳</a></h3></section>
-            <img class ="photo2"  src="static/image/cheesecake1.jpg">
-        </div>
+    <div id="fixed02">
+        <section>
+            <h6 id="fixed02_txt"> 이 달의 이벤트를 확인하세요!</h6>
+            <img id="fixed02_pic" src="{%static 'image/fixed02_pic.png'%}">
+        </section>
+    </div>
+
+     <div id="fixed03">
+          <section><h4><a href="{%url 'main:products:coffee7'%}"></a></h4>
+              <a href="{%url 'main:store'%}" ><h6 id="fixed03_txt"> 우리집 근처 Angel in Star를 찾아보세요.</h6></a>
+              <!--클릭 시 store페이지로 이동-->
+          </section>
+     </div>
 
 
 

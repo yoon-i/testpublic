@@ -1,11 +1,12 @@
 body {
    margin:0;
 }
- .wrapper{
+#slider-wrap{
    overflow-y:hidden;
    overflow-x:hidden;
    width:100%;
 }
+
 .main_body {
    width:500px;
    margin: 0 auto;
