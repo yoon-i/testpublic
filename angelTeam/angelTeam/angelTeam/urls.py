@@ -24,5 +24,8 @@ urlpatterns = [
     path('CS.html/', views.cs, name="cs"),
     path('store.html/', views.store, name="store"),
     path('accounts/', include('accounts.urls'), name='accounts'),
-    path('cs/', include('accounts.urls'), name="csaccounts")
+    path('cs/', include('accounts.urls'), name="csaccounts"),
+
+    path('edit/', include('accounts.urls'), name="edit"),
+    path('delete', include('accounts.urls'), name="delete"),
 ]

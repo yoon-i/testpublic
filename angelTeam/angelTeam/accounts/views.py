@@ -49,3 +49,23 @@ def board(request):
             'board': board,
         }
         return render(request, 'accounts/board.html', context)
+
+
+def boardEdit(request, pk):
+    board = Board.objects.get(id=pk)
+    if request.method == "POST":
+        board.title = request.POST['title']
+        board.content = request.POST['content']
+        board.writer = request.user
+
+        board.save()
+        return redirect('accounts/board.html')
+
+    else:
+        boardForm = BoardForm
+        return render(request, 'accounts/update.html', {'boardForm':boardForm})
+
+def boardDelete(request, pk):
+    board = Board.objects.get(id=pk)
+    board.delete()
+    return redirect('accounts/board.html')
