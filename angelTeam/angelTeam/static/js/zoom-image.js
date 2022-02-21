@@ -3,22 +3,22 @@
  */
 ;(function($) {
     /**
-     * 1, 缩略图大小和父容器大小一致
-     * 2, 父容器 href 属性为高清图片路径
+     * 1, 썸네일 크기는 상위 컨테이너 크기와 동일합니다.
+     * 2, 상위 컨테이너의 href 속성은 고화질 이미지 경로입니다.
      */
     $.fn.zoomImage = function(paras) {
         /**
-         * 默认参数
+         * 기본 매개변수
          */
         var defaultParas = {
-            layerW: 300, // 遮罩宽度
-            layerH: 100, // 遮罩高度
-            layerOpacity: 0.2, // 遮罩透明度
-            layerBgc: 'white', // 遮罩背景颜色
-            showPanelW: 650, // 显示放大区域宽
-            showPanelH: 420, // 显示放大区域高
-            marginL: 50, // 放大区域离缩略图右侧距离
-            marginT: 70 // 放大区域离缩略图上侧距离
+            layerW: 300, // 마스크 너비
+            layerH: 100, // 마스크 높이
+            layerOpacity: 0.2, // 불투명도 마스크
+            layerBgc: 'white', // 배경색 마스크
+            showPanelW: 650, // 확대된 영역의 너비를 표시
+            showPanelH: 420, // 확대/축소 영역 높이 표시
+            marginL: 50, // 확대된 영역과 썸네일 오른쪽 사이의 거리
+            marginT: 70 // 확대된 영역과 썸네일 위쪽 사이의 거리
         };
 
         paras = $.extend({}, defaultParas, paras);
@@ -26,7 +26,7 @@
         $(this).each(function() {
             var self = $(this).css({position: 'relative'});
             var selfOffset = self.offset();
-            var imageW = self.width(); // 图片高度
+            var imageW = self.width(); // 이미지 높이
             var imageH = self.height();
 
             self.find('img').css({
@@ -34,12 +34,12 @@
                 height: '100%'
             });
 
-            // 宽放大倍数
+            // 넓은 배율
             var wTimes = paras.showPanelW / paras.layerW;
-            // 高放大倍数
+            // 고배율
             var hTimes = paras.showPanelH / paras.layerH;
 
-            // 放大图片
+            // 사진 확대
             var img = $('<img>').attr('src', self.attr("href")).css({
                 position: 'absolute',
                 left: '0',
@@ -48,7 +48,7 @@
                 height: imageH * hTimes
             }).attr('id', 'big-img');
 
-            // 遮罩
+            // 마스크
             var layer = $('<div>').css({
                 display: 'none',
                 position: 'absolute',
@@ -62,7 +62,7 @@
                 cursor: 'crosshair'
             });
 
-            // 放大区域
+            // 영역 확대
             var showPanel = $('<div>').css({
                 display: 'none',
                 position: 'absolute',
@@ -76,7 +76,7 @@
             self.append(layer).append(showPanel);
 
             self.on('mousemove', function(e) {
-                // 鼠标相对于缩略图容器的坐标
+                // 축소판 컨테이너를 기준으로 한 마우스 좌표
                 var x = e.pageX - selfOffset.left;
                 var y = e.pageY - selfOffset.top;
 
