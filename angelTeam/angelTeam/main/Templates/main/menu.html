@@ -59,13 +59,11 @@
         </header>
 
 <!--★★★★★★★★★★★★★★★★★★★메뉴 페이지★★★★★★★★★★★★★★★★★★★★★-->
-        <!--★menu html 부분 시작★-->
         <section>
 
-
-
             <article>
-                <!--전체보기-->
+                <!--메뉴바 밑의 맵: 전체보기
+                홈으로 > Menu > See All-->
                 <div class="sub_title"  id="map_all">
                      <ul class="map">
                          <li><a href="{%url 'main:main'%}"><img src="{%static 'image/icon_home.png'%}" alt="홈으로"></a></li>
@@ -76,7 +74,7 @@
                      </ul>
                 </div>
 
-                <!--커피-->
+                <!--커피 관련 맵-->
                 <div class="sub_title"  id="map_coffee">
                      <ul class="map">
                          <li><a href="{%url 'main:main'%}"><img src="{%static 'image/icon_home.png'%}" alt="홈으로"></a></li>
@@ -87,7 +85,7 @@
                      </ul>
                 </div>
 
-                <!--음료-->
+                <!--음료 관련 맵-->
                 <div class="sub_title"  id="map_beverage">
                      <ul class="map">
                          <li><a href="{%url 'main:main'%}"><img src="{%static 'image/icon_home.png'%}" alt="홈으로"></a></li>
@@ -98,7 +96,7 @@
                      </ul>
                 </div>
 
-                <!--빵-->
+                <!--빵 관련 맵-->
                 <div class="sub_title"  id="map_bread">
                      <ul class="map">
                          <li><a href="{%url 'main:main'%}"><img src="{%static 'image/icon_home.png'%}" alt="홈으로"></a></li>
@@ -109,7 +107,7 @@
                      </ul>
                 </div>
 
-                <!--아이스크림-->
+                <!--아이스크림 관련 맵-->
                 <div class="sub_title"  id="map_icecream">
                      <ul class="map">
                          <li><a href="{%url 'main:main'%}"><img src="{%static 'image/icon_home.png'%}" alt="홈으로"></a></li>
@@ -127,16 +125,13 @@
                 <div class="bubble"><p id="msg"></p><img src="{%static 'image/angel_picture.png'%}"></div>
             </article>
 
-            <!--★productBox★-->
+            <!--메뉴별 상품-->
             <article id="product">
-                <!--상품-->
                 <!--커피-->
                 <div id="coffee" class="productBox">
-                    <!--선택한 메뉴 제목 나오도록 수정-->
                     <br>
                     <h2>COFFEE</h2>
             			<div class='product'>
-                            <!--IMG 파일 SRC안에 경로 추가-->
             				<dl><div><a href="{%url 'main:products:coffee1'%}"><img src="{%static 'image/product/icecoffee.jpg'%}"></a></div><dd>아이스커피</dd></dl>
             				<dl><div><a href="{%url 'main:products:coffee2'%}"><img src="{%static 'image/product/coldbrew.jpg'%}"></a></div><dd>콜드브루</dd></dl>
             				<dl><div><a href="{%url 'main:products:coffee3'%}"><img src="{%static 'image/product/caramel.jpg'%}"></a></div><dd>카라멜 마끼아또</dd></dl>
@@ -155,11 +150,9 @@
 
                 <!--음료-->
                 <div id="beverage" class="productBox">
-                    <!--선택한 메뉴 제목 나오도록 수정-->
                     <br>
                     <h2>BEVERAGE</h2>
             			<div class='product'>
-                            <!--IMG 파일 SRC안에 경로 추가-->
                             <dl><div><a href="{%url 'main:products:beverage1'%}"><img src="{%static 'image/product/mintchoco.jpg'%}"></a></div><dd>민트 초콜릿 칩</dd></dl>
             				<dl><div><a href="{%url 'main:products:beverage2'%}"><img src="{%static 'image/product/mango.jpg'%}"></a></div><dd>망고 블렌디드</dd></dl>
             				<dl><div><a href="{%url 'main:products:beverage3'%}"><img src="{%static 'image/product/strawberry.jpg'%}"></a></div><dd>딸기 요거트<dd></dl>
@@ -176,14 +169,11 @@
             			</div>
                 </div><!--beverage 끝-->
 
-
                <!--빵-->
                 <div id="bread" class="productBox">
-                    <!--선택한 메뉴 제목 나오도록 수정-->
                     <br>
                     <h2>BREAD</h2>
             			<div class='product'>
-                            <!--IMG 파일 SRC안에 경로 추가-->
             				<dl><div><a href="{%url 'main:products:bread1'%}"><img src="{%static 'image/product/muffin.jpg'%}"></a></div><dd>블루베리 머핀</dd></dl>
             				<dl><div><a href="{%url 'main:products:bread2'%}"><img src="{%static 'image/product/bagel.jpg'%}"></a></div><dd>베이글</dd></dl>
             				<dl><div><a href="{%url 'main:products:bread3'%}"><img src="{%static 'image/product/scon.jpg'%}"></a></div><dd>스콘<dd></dl>
@@ -202,11 +192,9 @@
 
                 <!--아이스크림-->
                 <div id="icecream" class="productBox">
-                    <!--선택한 메뉴 제목 나오도록 수정-->
                     <br>
                     <h2>ICE CREAM</h2>
             			<div class='product'>
-                            <!--IMG 파일 SRC안에 경로 추가-->
             				<dl><div><a href="{%url 'main:products:icecream1'%}"><img src="{%static 'image/product/vanilla_ice.jpg'%}"></a></div><dd>바닐라 아이스크림</dd></dl>
             				<dl><div><a href="{%url 'main:products:icecream2'%}"><img src="{%static 'image/product/choco_ice.jpg'%}"></a></div><dd>초콜릿 아이스크림</dd></dl>
             				<dl><div><a href="{%url 'main:products:icecream3'%}"><img src="{%static 'image/product/vanilla_chip.jpg'%}"></a></div><dd>바닐라 초코칩 아이스크림<dd></dl>
@@ -222,10 +210,7 @@
             				<dl><div><a href="{%url 'main:products:icecream9'%}"><img src="{%static 'image/product/choco_af.jpg'%}"></a></div><dd>초코 아포가토</dd></dl>
             			</div>
                 </div><!--icecream 끝-->
-
-
             </article>
-
         </section><!--★menu html 부분 끝★-->
 <!--★★★★★★★★★★★★★★★★★★메뉴 페이지 끝★★★★★★★★★★★★★★★★★★★★★★-->
 
