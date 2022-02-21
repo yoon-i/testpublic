@@ -2,8 +2,9 @@
 body h1 { font-family: 'Lora', 'Gowun Batang', serif; }
 body h2 { font-family: 'Lora', 'Gowun Batang', serif; }
 
-#slider-wrap img {
-    width:60%;
+#slider-wrap {
+    margin:0;
+    padding:0;
 }
 
 #space1 { /* 슬라이드와 fixed01 사이 여백 */
@@ -60,6 +61,7 @@ body h2 { font-family: 'Lora', 'Gowun Batang', serif; }
                 background-attachment: fixed; /* 스크롤바 움직일때 이미지가 따라다님 */
             }
 
+#slider div { margin:0; }
 /*배너: 커피 구독 서비스 관련 배너*/
 .banner{
 }
@@ -72,6 +74,21 @@ body h2 { font-family: 'Lora', 'Gowun Batang', serif; }
 .banner h1{
     opacity:0;
 }/*배너 끝*/
+
+/*이벤트정보2*/
+.spring {
+    width: 100%;
+    height: 100%;
+    text-align:center;
+    margin: 0 auto;
+    background-color:white;
+}
+
+.spring img {
+    height:auto;
+    height: 90%;
+    float:left;
+} /*이벤트정보2 끝*/
 
 
 .fixed04{
