@@ -6,7 +6,7 @@
                 border: 2px solid green;height: 500px;
                 height: 500px;
                 /* 배경이미지는 최소 1920*960으로 제작해야 문제가 안생김 */
-                background-image: url(../image/cafe.jpg);
+
 
                 background-size: cover; /* 요소를 비율에 맞게 커버 */
                 background-position: center; /* 이미지를 요소의 정가운데로 처리 */
@@ -32,7 +32,7 @@
                 border: 2px solid green;height: 500px;
                 height: 700px;
                 /* 배경이미지는 최소 1920*960으로 제작해야 문제가 안생김 */
-                background-image: url(../image/starbucks.jpg);
+                background-image: url(../image/backimg_15.jpg);
                 background-repeat: no-repeat; /* 배경이미지X */
                 background-size: cover; /* 요소를 비율에 맞게 커버 */
                 background-position: center; /* 이미지를 요소의 정가운데로 처리 */
