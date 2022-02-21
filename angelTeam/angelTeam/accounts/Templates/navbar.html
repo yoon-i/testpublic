@@ -7,12 +7,12 @@
                 <div id="loginBox">
                     <ul id="signIn">
                         {% if user.is_authenticated %}
-                        <a class="nav_link" href="{%url 'accounts:logout'%}">{{user.username}}(Log Out)</a>
+                        <a class="nav_link" href="{%url 'accounts:logout'%}">{{user.username}}님, 반갑습니다.(Logout)</a>
                         {% else %}
                         <li><a href="{%url 'accounts:login'%}">Sign In</a></li>
                         {% endif %}
                         <li><a href="{%url 'accounts:signup'%}">Sign Up</a></li>
-                        <li><a href="#">My Angels</a></li>
+                        <li><a href="{%url 'accounts:board' %}">My Angels</a></li>
                         <li><a href="{%url 'main:store'%}">STORE</a></li>
                     </ul>
                 </div>
