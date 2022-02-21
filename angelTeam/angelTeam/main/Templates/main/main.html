@@ -46,21 +46,20 @@
         </header>
 
 
-      <div id="wrapper">
       <div id="slider-wrap" >
           <ul id="slider">
              <li>
                <div>
 
                 </div>
-<img src="static/image/123456789.PNG">
+             <img src="static/image/123456789.PNG">
              </li>
 
              <li>
                 <div>
 
                 </div>
-<img src="{%static 'image/event2.png'%}">
+             <img src="{%static 'image/event2.png'%}">
              </li>
 
              <li>
@@ -70,16 +69,12 @@
                             <span>자세히보기</span> </a>
                 </div>
 
-
-
           </ul>
 
            <!--controls-->
           <div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
           <div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
-          <div id="counter">
-
-          </div>
+          <div id="counter"></div>
           <script src="static/Js/slide.js"></script>
 
           <div id="pagination-wrap">
@@ -90,56 +85,28 @@
 
       </div>
 
+    <div id="space1"></div>
+
     <div class="fixed01">
         <section>
-            <h1><a href="{%url 'main:products:coffee2'%}">콜드브루</a>
-                </h1>
-           <h2>이제 여러가지 쓰면 제발요
-            아래것만 h2로 아마 사이즈 줄이면
-            도지않을까요? 얘니매이션 똒같은걸로주고</h2></section>
-        <img class ="photo"  src="static/image/product/coldbrew.jpg" width="400" height="450">
+            <h1><a href="{%url 'main:menu'%}#coffee">최상급 원두로 내린 커피 보러가실까요?</a></h1>
+            <h2>부드러운 신맛과 쓴맛, 초콜릿 향을 느낄 수 있는 아라비카 원두 100%</h2>
+        </section>
+        <img id ="photo1"  src="{%static 'image/coffeebeans.png'%}" >
     </div>
+
         <div class="fixed02">
             <section><h3><a href="{%url 'main:products:bread8'%}"> 상품설명하는곳</a></h3></section>
-            <img class ="photo2"  src="static/image/cheesecake1.jpg"></div>
+            <img class ="photo2"  src="static/image/cheesecake1.jpg">
+        </div>
+
      <div class="fixed03">
           <section><h4><a href="{%url 'main:products:coffee7'%}">상품설명하는곳</a></h4>
               <img class ="photo3"   src="static/image/product/mocha.jpg"></div>
 
-        <footer></footer>
-<style>
-  width: 100%;
-        height: 300px;
-        overflow: auto;
-        float: left;
-        margin: 0px 10px;
-  background-image: url( "../image/logo.png" );
-</style>
 
-<!-- 이위에가 파일이미지 -->
-        <section>
-            <article id="slideShow">
 
-            </article>
-
-            <article id="menubox1">
-
-            </article>
-
-            <article id="menubox2">
-
-            </article>
-
-            <article id="menubox3">
-
-            </article>
-
-            <article id="menubox4">
-
-            </article>
-
-        </section>
-
+    <!--footer-->
         <footer>
             <div id="footerBox">
                 <div id="bottomMenuBox">
@@ -165,6 +132,7 @@
             </div>
             <div id="moveToTopBox"><img src="{%static 'image/btn_prom_up.png'%}" id="moveToTop"></div>
         </footer>
+
     </div> <!-- wrap 끝 -->
 
 </body>
