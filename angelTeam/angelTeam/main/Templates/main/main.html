@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>AngleinStar 메인페이지</title>
     <link rel="stylesheet" type="text/css" href="{%static 'css/common.css'%}">
-    <link rel="stylesheet" type="text/css" href="static/css/test.css">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/test.css'%}">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
@@ -49,10 +49,11 @@
       <div id="slider-wrap" >
           <ul id="slider">
              <li>
-               <div>
-
+               <!--배너3-->
+                <div class="banner">
+                    <h1><a href="{%url 'main:menu'%}#coffee"></a></h1>
+                    <img id ="banner3" src="{%static 'image/banner3.png'%}">
                 </div>
-             <img src="static/image/123456789.PNG">
              </li>
 
              <li>
@@ -100,11 +101,9 @@
             <img class ="photo2"  src="static/image/cheesecake1.jpg">
         </div>
 
-     <div class="fixed03">
-          <section><h4><a href="{%url 'main:products:coffee7'%}">상품설명하는곳</a></h4>
-              <img class ="photo3"   src="static/image/product/mocha.jpg"></div>
 
 
+<!--메인 페이지 section 끝-->
 
     <!--footer-->
         <footer>
