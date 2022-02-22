@@ -5,6 +5,9 @@ body h2 { font-family: 'Lora', 'Gowun Batang', serif; }
 #slider-wrap {
     margin:0;
     padding:0;
+    overflow-y:hidden;
+    overflow-x:hidden;
+    width:100%;
 }
 
 #space1 { /* 슬라이드와 fixed01 사이 여백 */

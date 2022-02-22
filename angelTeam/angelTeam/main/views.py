@@ -16,7 +16,4 @@ def menu(request):
     return render(request, 'main/menu.html')
 
 def event(request):
-    return render(request, 'main/list.html')
-
-def eventView(request):
-    return render(request, 'main/view.html')
+    return render(request, 'main/event.html')
