@@ -39,7 +39,7 @@
                             <li><a href="{%url 'main:store'%}">STORE</a></li>
                             <li><a href="{%url 'main:cs'%}">SERVICE</a></li>
                             <li><a href="{%url 'main:event'%}">WHAT'S NEW</a></li>
-                            <li><a href="">STORY</a></li>
+                            <li><a href="#">STORY</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,8 +92,10 @@
 
     <div id="fixed02">
         <section>
-            <h6 id="fixed02_txt"><a href="{%url 'main:event'%}">이 달의 이벤트를 확인하세요!</h6>
-            <img id="fixed02_pic" src="{%static 'image/fixed02_pic.png'%}">
+            <a href="{%url 'main:event'%}">
+                <h6 id="fixed02_txt">이 달의 이벤트를 확인하세요!</h6>
+                <img id="fixed02_pic" src="{%static 'image/fixed02_pic.png'%}">
+            </a>
         </section>
     </div>
 
