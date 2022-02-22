@@ -21,11 +21,5 @@ from main import views
 urlpatterns = [
     path('', include('main.urls')),
     path('admin/', admin.site.urls),
-    path('CS.html/', views.cs, name="cs"),
-    path('store.html/', views.store, name="store"),
     path('accounts/', include('accounts.urls'), name='accounts'),
-    path('cs/', include('accounts.urls'), name="csaccounts"),
-
-    path('edit/', include('accounts.urls'), name="edit"),
-    path('delete', include('accounts.urls'), name="delete"),
 ]
