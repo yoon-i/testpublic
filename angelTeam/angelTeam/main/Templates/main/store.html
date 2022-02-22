@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
     <script src="{%static 'js/jquery-3.5.1.min.js'%}"></script>
     <script src="{%static 'js/keyup.js'%}"></script>
-    <script src="{%static 'js/map.js'%}"></script>
     <script type="text/javascript"
             src="//dapi.kakao.com/v2/maps/sdk.js?appkey=18424f3734601e27c03e74e4e2d5c049">
     </script>
@@ -146,10 +145,10 @@
 		    // 지도타입 컨트롤 생성
             var mapTypeControl = new kakao.maps.MapTypeControl();
 
-            // 지도에 컨트롤을 추가
+            // 지도에 컨트롤 추가
             map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 
-            // 줌 컨트롤을 생성
+            // 줌 컨트롤 생성
             var zoomControl = new kakao.maps.ZoomControl();
             map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
@@ -157,7 +156,7 @@
 
         <!-- 마커 생성 및 지도에 띄우는 코드 -->
         <script>
-        // 마커를 표시할 위치와 title 객체 배열
+        // 마커 표시할 위치
         var positions = [
             {title: 'AIS 종각점',
             latlng: new kakao.maps.LatLng(37.5699578826778, 126.984542274763)},
