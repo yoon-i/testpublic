@@ -11,4 +11,6 @@ urlpatterns = [
     path('menu/product/', include('products.urls', namespace='products')),
     path('store/', views.store, name="store"),
     path('cs/', views.cs, name="cs"),
+    path('event/', views.event, name="event"),
+    path('event/view', views.eventView, name="eventView"),
 ]
