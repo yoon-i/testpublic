@@ -90,6 +90,11 @@ body h2 { font-family: 'Lora', 'Gowun Batang', serif; }
     float:left;
 } /*이벤트정보2 끝*/
 
+.maincoffee{
+    width: 90%;
+    height: auto;
+} /*이벤트정보3 끝*/
+
 
 .fixed04{
 
