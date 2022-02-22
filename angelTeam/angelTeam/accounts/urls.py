@@ -12,6 +12,7 @@ urlpatterns =[
     path('signup/welcome.html', views.welcome, name='welcome'),
     path('board.html/', views.board, name="board"),
     path('board.html/accounts/board.html', views.board, name="acboard"),
+    path('board.html/accounts/login.html', auth_views.LoginView.as_view(template_name='accounts./login.html'), name='bologin'),
 
     path('<int:pk>', views.boardEdit, name="editboard"),
     path('accounts/board.html', views.board, name="edboard"),

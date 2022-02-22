@@ -33,14 +33,19 @@ def board(request):
     if request.method == 'POST':
         title = request.POST['title']
         content = request.POST['content']
-        writer = request.user
-        board = Board(
-            title=title,
-            content=content,
-            writer=writer,
-        )
-        board.save()
-        return redirect('accounts/board.html')
+
+        if request.user.is_authenticated:
+            writer = request.user
+            board = Board(
+                title=title,
+                content=content,
+                writer=writer,
+            )
+            board.save()
+            return redirect('accounts/board.html')
+        else:
+            return redirect('accounts/login.html')
+
     else:
         boardForm = BoardForm
         board = Board.objects.all()
