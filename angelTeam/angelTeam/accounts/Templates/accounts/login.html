@@ -9,7 +9,6 @@
             {% csrf_token %}
             {% include "form_errors.html" %}
             <input type="hidden" name="next" value="{{ next }}">  <!-- 로그인 성공후 이동되는 URL --> <!--settings.py에 등록하러 ㄱㄱ-->
-            {% include "form_errors.html" %}
 
             <table align="center" id="loginTable">
                 <tr><td colspan="2"><h4 style="font-weight:bold;"><br>angel in star 에 오신 것을 환영합니다!<br></h4></td></tr>
