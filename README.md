@@ -9,7 +9,9 @@
 2022.02.08 ~ 2022.02.22 (주말제외 11일)
 
 팀명: 천사조
-팀원: 장은영, 김세윤, 김도연, 박세연, 원종현
+팀원: 장은영, 김세윤, 김도연, 박세연, 원종현 
+
+[🔗발표자료](https://github.com/somijjjjj/Angel_In_Star/blob/master/Angel%20in%20Star.pdf)
 
 <br>
 
